@@ -26,9 +26,18 @@ También pueden servir como una fuente de vulnerabilidad aunque se requiere que 
 capa del modelo TCP/IP se encuentra el protocolo HTTP? ¿Y los protocolos TCP,
 UDP, e IP?
 
+El puerto que recibe es el 80 y el protocolo:
+
+HTTP: Se encuentra en la capa 4.
+TCP: Se encuentra en la capa 4.
+UPD: Se encuentra en la capa 4.
+IP: Se encuentra en la capa 3.
+
 5. ¿Cuál es el significado de la siguiente respuesta de un servidor?
 HTTP/1.1 302 Found
 Location: http://www.example.com/test/index2.php
+
+El error 302 Found es porque la URL no se encuentra en esa ubicación.
 
 6. Utilizando el filtro de captura para la interfaz de red de Wireshark, analiza la petición
 al host: www.google.com. Mostrando la cabecera IP, la dirección IP de tu ordenador y
